@@ -1,0 +1,3 @@
+HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
+[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
+HTTP Error: 401 Client Error: Unauthorized for url: https://dev.ewaproduct.com/api/admin/categories/6566/translations
