@@ -1,0 +1,3 @@
+RESPONSE DATA: {'button_text': 'Button_text_hzjgf', 'country_id': 1, 'description': 'Description_vqzwn', 'external': True, 'id': 5835, 'index': 1, 'preview_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/5835/preview.png', 'slider_id': 1, 'stock_id': 1, 'title': 'Title_uktfy', 'type': 'video', 'url': 'Slides_phvrg'}
+HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
+[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
