@@ -1,0 +1,1 @@
+RESPONSE DATA: {'button_text': 'Button_text_lirmp', 'country_id': 1, 'description': 'Description_iqexe', 'external': True, 'id': 5430, 'image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/5430/image.jpg', 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_nxzkz', 'type': 'image', 'url': 'Slides_pleyo'}
