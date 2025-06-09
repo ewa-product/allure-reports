@@ -1,0 +1,1 @@
+RESPONSE DATA: {'button_text': 'Button_text_zkond', 'country_id': 1, 'description': 'Description_dqrvx', 'external': True, 'id': 5492, 'image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/5492/image.jpg', 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_ntior', 'type': 'video', 'url': 'Slides_nrrpc'}
