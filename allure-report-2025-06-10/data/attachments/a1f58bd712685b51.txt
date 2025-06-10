@@ -1,0 +1,1 @@
+RESPONSE DATA: {'button_text': 'Button_text_fmawi', 'country_id': 1, 'description': 'Description_kshwi', 'external': True, 'id': 6298, 'index': 1, 'preview_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/6298/preview.png', 'slider_id': 1, 'stock_id': 1, 'title': 'Title_zemey', 'type': 'video', 'url': 'Slides_yenfg'}
