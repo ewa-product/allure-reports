@@ -1,0 +1,1 @@
+RESPONSE DATA: {'button_text': 'Button_text_gpkdd', 'country_id': 1, 'description': 'Description_vhhsb', 'external': True, 'id': 7328, 'image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/7328/image.jpg', 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_xtucg', 'title_color': '#FFFFFF', 'type': 'video', 'url': 'Slides_sjtcv'}
