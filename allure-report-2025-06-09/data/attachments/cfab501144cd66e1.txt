@@ -1,1 +1,0 @@
-RESPONSE DATA: {'button_text': 'Button_text_gmumc', 'country_id': 1, 'description': 'Description_trfvf', 'desktop_image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/5551/desktop_image.jpg', 'external': True, 'id': 5551, 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_uvjae', 'type': 'video', 'url': 'Slides_olqkv'}

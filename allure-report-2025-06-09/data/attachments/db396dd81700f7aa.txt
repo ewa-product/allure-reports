@@ -1,1 +1,0 @@
-RESPONSE DATA: {'button_text': 'Button_text_xwxwk', 'country_id': 1, 'description': 'Description_nxrbr', 'desktop_image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/4916/desktop_image.jpg', 'external': True, 'id': 4916, 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_nexti', 'type': 'video', 'url': 'Slides_tadzn'}
