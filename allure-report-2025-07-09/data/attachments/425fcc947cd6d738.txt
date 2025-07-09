@@ -1,0 +1,1 @@
+HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/promotions/4929/items/1
