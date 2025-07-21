@@ -1,0 +1,1 @@
+HTTP Error: 413 Client Error: Request Entity Too Large for url: https://admin-dev.ewaproduct.com/api/admin/slides/11965/images
