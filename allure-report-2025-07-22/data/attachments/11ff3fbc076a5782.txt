@@ -1,0 +1,3 @@
+HTTP Error: 400 Client Error: Bad Request for url: https://admin-dev.ewaproduct.com/api/admin/sliders/6329
+[WARN] Не удалось удалить слайдер через БД: current transaction is aborted, commands ignored until end of transaction block
+. Пробуем через API...
