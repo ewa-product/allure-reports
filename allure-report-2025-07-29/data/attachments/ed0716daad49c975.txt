@@ -1,0 +1,2 @@
+HTTP Error: 401 Client Error: Unauthorized for url: https://dev.ewaproduct.com/api/auth
+FINAL AUTH FAIL RESPONSE: {'status_code': 401, 'error': '{"code":401,"message":"invalid access parameter","message_loc":"Некорректный параметр для входа. Пожалуйста, проверьте правильность и повторите попытку или используйте другой параметр: логин, телефон, email или ID (rid: 3379381033)","rid":"3379381033"}\n'}

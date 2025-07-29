@@ -1,0 +1,4 @@
+➡ Удаление продукта 6566 через БД
+✅ Продукт 6566 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/16466/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/16466
