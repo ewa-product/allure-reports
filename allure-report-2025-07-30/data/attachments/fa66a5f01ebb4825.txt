@@ -1,0 +1,7 @@
+HTTP Error: 400 Client Error: Bad Request for url: https://admin-dev.ewaproduct.com/api/admin/products/6661
+➡ Удаление продукта 6660 через БД
+✅ Продукт 6660 успешно удалён из БД
+➡ Удаление продукта 6661 через БД
+✅ Продукт 6661 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/16738/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/16738
