@@ -1,0 +1,3 @@
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/product-brands/8923/images
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/product-brands/8923
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/product-brands/8923
