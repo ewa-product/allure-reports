@@ -1,0 +1,5 @@
+➡ Удаление продукта 6830 через БД
+✅ Продукт 6830 успешно удалён из БД
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/17268
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/17268/translations
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/17268
