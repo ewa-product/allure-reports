@@ -1,0 +1,4 @@
+➡ Удаление продукта 7696 через БД
+✅ Продукт 7696 успешно удалён из БД
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/19104/translations
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/19104
