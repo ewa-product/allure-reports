@@ -1,0 +1,3 @@
+HTTP Error: 405 Client Error: Method Not Allowed for url: https://admin-dev.ewaproduct.com/api/admin/items/983
+[WARN] API удаление item 983 вернуло код 405, пробуем удалить из БД...
+[INFO] Item 983 удалён из БД напрямую.
