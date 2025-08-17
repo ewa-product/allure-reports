@@ -1,0 +1,3 @@
+HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/admin/products/7956
+➡ Удаление продукта 7956 через БД
+✅ Продукт 7956 успешно удалён из БД
