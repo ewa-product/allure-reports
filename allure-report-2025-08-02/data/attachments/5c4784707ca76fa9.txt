@@ -1,1 +1,0 @@
-HTTP Error: 502 Server Error: Bad Gateway for url: https://dev.ewaproduct.com/api/admin/products/1/translations

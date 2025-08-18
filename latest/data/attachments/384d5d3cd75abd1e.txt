@@ -1,0 +1,5 @@
+➡ Удаление продукта 8418 через БД
+✅ Продукт 8418 успешно удалён из БД
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/20153
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/20153/translations
+HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/20153
