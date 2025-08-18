@@ -1,0 +1,5 @@
+HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/products/8796/translations
+➡ Удаление продукта 8796 через БД
+✅ Продукт 8796 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/20666/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/20666
