@@ -1,0 +1,4 @@
+➡ Удаление продукта 8868 через БД
+✅ Продукт 8868 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/20857/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/20857

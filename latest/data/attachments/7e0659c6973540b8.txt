@@ -1,0 +1,8 @@
+HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
+[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20838/translations
+➡ Удаление продукта 8849 через БД
+✅ Продукт 8849 успешно удалён из БД
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20838
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20838/translations
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20838
