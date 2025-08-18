@@ -1,0 +1,5 @@
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/items/1094/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/items/1094/translations
+HTTP Error: 405 Client Error: Method Not Allowed for url: https://admin-dev.ewaproduct.com/api/admin/items/1094
+[WARN] API удаление item 1094 вернуло код 405, пробуем удалить из БД...
+[INFO] Item 1094 удалён из БД напрямую.
