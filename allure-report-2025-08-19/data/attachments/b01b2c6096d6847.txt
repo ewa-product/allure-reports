@@ -1,0 +1,4 @@
+➡ Удаление продукта 9130 через БД
+✅ Продукт 9130 успешно удалён из БД
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/21492/translations
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/21492
