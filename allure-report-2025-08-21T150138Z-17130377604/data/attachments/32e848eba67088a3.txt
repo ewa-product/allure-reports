@@ -1,0 +1,6 @@
+HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
+[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
+➡ Удаление продукта 9545 через БД
+✅ Продукт 9545 успешно удалён из БД
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/22636/translations
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/22636
