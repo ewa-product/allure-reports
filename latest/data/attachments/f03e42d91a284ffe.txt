@@ -1,9 +1,0 @@
-HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
-[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/promotions/5402/items/1
-[WARN] Не удалось удалить элемент акции через БД: column "id" does not exist
-LINE 3:                 WHERE id = 1 AND promotion_id = 5402
-                              ^
-. Пробуем через API...
-[WARN] Не удалось удалить акцию через БД: current transaction is aborted, commands ignored until end of transaction block
-. Пробуем через API...

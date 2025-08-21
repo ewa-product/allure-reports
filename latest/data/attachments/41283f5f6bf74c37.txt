@@ -1,3 +1,0 @@
-HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
-[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
-RESPONSE DATA: {'button_text': 'Button_text_jhjrc', 'country_id': 1, 'description': 'Description_swrje', 'desktop_image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/5836/desktop_image.jpg', 'external': True, 'id': 5836, 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_skwct', 'type': 'image', 'url': 'Slides_lzurk'}

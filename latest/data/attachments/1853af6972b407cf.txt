@@ -1,1 +1,0 @@
-RESPONSE DATA: {'button_text': 'Button_text_jueyh', 'country_id': 1, 'description': 'Description_jkhct', 'desktop_image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/7750/desktop_image.jpg', 'external': True, 'id': 7750, 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_zqaab', 'title_color': '#FFFFFF', 'type': 'video', 'url': 'Slides_atfmw'}

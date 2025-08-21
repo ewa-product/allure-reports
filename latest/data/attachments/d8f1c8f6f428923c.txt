@@ -1,1 +1,0 @@
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/delivery/user_address?id=abc

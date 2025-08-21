@@ -1,2 +1,0 @@
-HTTP Error: 400 Client Error: Bad Request for url: https://admin-dev.ewaproduct.com/api/admin/products/6225
-✅ Продукт 6225 успешно удалён из всех таблиц

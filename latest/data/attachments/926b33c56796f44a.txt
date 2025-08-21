@@ -1,1 +1,0 @@
-RESPONSE DATA: {'button_text': 'Button_text_mnuts', 'country_id': 1, 'description': 'Description_btmzy', 'desktop_image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/4476/desktop_image.jpg', 'external': True, 'id': 4476, 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_qpdrn', 'type': 'image', 'url': 'Slides_azumc'}

@@ -1,5 +1,0 @@
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/products/6975/translations
-➡ Удаление продукта 6975 через БД
-✅ Продукт 6975 успешно удалён из БД
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/17724/translations
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/17724

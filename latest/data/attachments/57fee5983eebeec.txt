@@ -1,4 +1,0 @@
-➡ Удаление продукта 9383 через БД
-✅ Продукт 9383 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/22110/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/22110

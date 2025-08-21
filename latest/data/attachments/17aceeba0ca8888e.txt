@@ -1,1 +1,0 @@
-RESPONSE DATA: {'button_text': 'Button_text_klgrp', 'country_id': 1, 'description': 'Description_ewcqs', 'desktop_image_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/6066/desktop_image.jpg', 'external': True, 'id': 6066, 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_tpvvg', 'type': 'image', 'url': 'Slides_reuig'}

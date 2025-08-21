@@ -1,1 +1,0 @@
-HTTP Error: 401 Client Error: Unauthorized for url: https://dev.ewaproduct.com/api/admin/categories/1

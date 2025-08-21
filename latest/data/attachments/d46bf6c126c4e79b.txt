@@ -1,0 +1,9 @@
+HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
+[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
+HTTP Error: 400 Client Error: Bad Request for url: https://admin-dev.ewaproduct.com/api/admin/products/9522
+➡ Удаление продукта 9520 через БД
+✅ Продукт 9520 успешно удалён из БД
+➡ Удаление продукта 9522 через БД
+✅ Продукт 9522 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/22551/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/22551

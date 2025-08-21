@@ -1,3 +1,0 @@
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/slides/13912/images
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/slides/13912
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/slides/13912

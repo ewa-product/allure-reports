@@ -1,3 +1,0 @@
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/products/6211/translations?lang_code=ru
-✅ Продукт 6211 успешно удалён из всех таблиц
-✅ Продукт 6211 успешно удалён из всех таблиц

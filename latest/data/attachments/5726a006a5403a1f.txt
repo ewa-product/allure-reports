@@ -1,2 +1,0 @@
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/products/6221
-✅ Продукт 6221 успешно удалён из всех таблиц

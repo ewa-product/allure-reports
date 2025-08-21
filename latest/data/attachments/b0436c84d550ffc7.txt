@@ -1,2 +1,0 @@
-HTTP Error: 422 Client Error: Unprocessable Entity for url: https://admin-dev.ewaproduct.com/api/admin/products/6268
-✅ Продукт 6268 успешно удалён из всех таблиц

@@ -1,6 +1,0 @@
-[WARN] Не удалось удалить элемент акции через БД: column "id" does not exist
-LINE 3:                 WHERE id = 1 AND promotion_id = 4955
-                              ^
-. Пробуем через API...
-[WARN] Не удалось удалить акцию через БД: current transaction is aborted, commands ignored until end of transaction block
-. Пробуем через API...

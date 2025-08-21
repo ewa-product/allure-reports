@@ -1,1 +1,0 @@
-RESPONSE DATA: {'button_text': 'Button_text_dztvr', 'country_id': 1, 'description': 'Description_heutw', 'desktop_preview_url': 'https://cdn.ewaproductcdn.com/static/ewaproduct/test/images/slides/6538/desktop_preview.png', 'external': True, 'id': 6538, 'index': 1, 'slider_id': 1, 'stock_id': 1, 'title': 'Title_mqden', 'type': 'video', 'url': 'Slides_lgznr'}

@@ -1,4 +1,0 @@
-➡ Удаление продукта 7282 через БД
-✅ Продукт 7282 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/18395/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/18395

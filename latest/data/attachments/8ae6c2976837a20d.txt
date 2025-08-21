@@ -1,5 +1,0 @@
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/17197/translations
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/auth
-FINAL AUTH FAIL RESPONSE: {'status_code': 502, 'error': '<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.18.0 (Ubuntu)</center>\r\n</body>\r\n</html>\r\n'}
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/17197/translations
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/17197

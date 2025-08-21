@@ -1,0 +1,3 @@
+HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/admin/products/9509
+➡ Удаление продукта 9509 через БД
+✅ Продукт 9509 успешно удалён из БД
