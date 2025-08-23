@@ -1,4 +1,0 @@
-➡ Удаление продукта 9724 через БД
-✅ Продукт 9724 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/22998/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/22998
