@@ -1,1 +1,0 @@
-HTTP Error: 500 Server Error: Internal Server Error for url: https://dev.ewaproduct.com/api/tickets/48258/send_message

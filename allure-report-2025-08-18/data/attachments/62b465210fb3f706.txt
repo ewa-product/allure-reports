@@ -1,4 +1,0 @@
-➡ Удаление продукта 8022 через БД
-✅ Продукт 8022 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/19685/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/19685

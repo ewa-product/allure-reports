@@ -1,4 +1,0 @@
-➡ Удаление продукта 8417 через БД
-✅ Продукт 8417 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/20150/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/20150

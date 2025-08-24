@@ -1,6 +1,0 @@
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20144/translations
-➡ Удаление продукта 8410 через БД
-✅ Продукт 8410 успешно удалён из БД
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20144
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20144/translations
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/20144

@@ -1,0 +1,5 @@
+HTTP Error: 422 Client Error: Unprocessable Entity for url: https://admin-dev.ewaproduct.com/api/admin/products/9823
+➡ Удаление продукта 9823 через БД
+✅ Продукт 9823 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23347/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23347
