@@ -1,6 +1,0 @@
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/products/9807
-➡ Удаление продукта 9807 через БД
-✅ Продукт 9807 успешно удалён из БД
-[WARN] Не удалось удалить категорию через API: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')). Пробуем удалить напрямую из БД...
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23328/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23328

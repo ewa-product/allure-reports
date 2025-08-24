@@ -1,2 +1,0 @@
-HTTP Error: 422 Client Error: Unprocessable Entity for url: https://admin-dev.ewaproduct.com/api/admin/items/1299
-[INFO] Item 1299 успешно удалён из БД.
