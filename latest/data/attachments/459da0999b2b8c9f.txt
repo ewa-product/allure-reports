@@ -1,7 +1,0 @@
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/products/9787/translations?lang_code=ru
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/23183/translations
-➡ Удаление продукта 9787 через БД
-✅ Продукт 9787 успешно удалён из БД
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/23183
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/23183/translations
-HTTP Error: 502 Server Error: Bad Gateway for url: https://admin-dev.ewaproduct.com/api/admin/categories/23183
