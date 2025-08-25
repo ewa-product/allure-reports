@@ -1,0 +1,4 @@
+➡ Удаление продукта 9919 через БД
+✅ Продукт 9919 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23627/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23627

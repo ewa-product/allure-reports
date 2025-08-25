@@ -1,0 +1,2 @@
+HTTP Error: 400 Client Error: Bad Request for url: https://dev.ewaproduct.com/api/1c_integration/stock?secret_key=EdsQE-Xy7123-NEBRRR-2kPXXW-QJFER
+HTTP Error: 400 Client Error: Bad Request for url: https://dev.ewaproduct.com/api/1c_integration/stock?secret_key=EdsQE-Xy7123-NEBRRR-2kPXXW-QJFER
