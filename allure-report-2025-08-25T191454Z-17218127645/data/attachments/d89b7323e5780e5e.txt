@@ -1,0 +1,4 @@
+➡ Удаление продукта 9972 через БД
+✅ Продукт 9972 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23743/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23743
