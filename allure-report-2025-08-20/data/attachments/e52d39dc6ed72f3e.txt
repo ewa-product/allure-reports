@@ -1,1 +1,0 @@
-HTTP Error: 404 Client Error: Not Found for url: https://dev.ewahelps.com/api/v1/initiative/None
