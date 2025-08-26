@@ -1,0 +1,4 @@
+➡ Удаление продукта 10069 через БД
+✅ Продукт 10069 успешно удалён из БД
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/24022/translations
+HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/24022
