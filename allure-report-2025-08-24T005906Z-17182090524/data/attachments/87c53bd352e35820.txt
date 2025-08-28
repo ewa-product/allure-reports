@@ -1,1 +1,0 @@
-HTTP Error: 502 Server Error: Bad Gateway for url: https://dev.ewaproduct.com/api/1c_integration/stock?stock_id_1c=1
