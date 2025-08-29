@@ -1,0 +1,4 @@
+➡ Удаление продукта 10291 через БД
+✅ Продукт 10291 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/24548/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/24548
