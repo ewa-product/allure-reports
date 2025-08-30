@@ -1,7 +1,0 @@
-HTTP Error: 500 Server Error: Internal Server Error for url: https://admin-dev.ewaproduct.com/api/auth
-[1/3] Ошибка 500 при авторизации, повтор через 2 сек...
-[ERROR] Не удалось удалить перевод lang=ru через API: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-➡ Удаление продукта 9806 через БД
-✅ Продукт 9806 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23326/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/23326
