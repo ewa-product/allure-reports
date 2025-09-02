@@ -1,2 +1,0 @@
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/items/2357
-[INFO] Item 2357 успешно удалён из БД.
