@@ -1,0 +1,4 @@
+HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/admin/items/2829/translations
+HTTP Error: 405 Client Error: Method Not Allowed for url: https://admin-dev.ewaproduct.com/api/admin/items/2829
+[WARN] API удаление item 2829 вернуло код 405, пробуем удалить из БД...
+[INFO] Item 2829 удалён из БД напрямую.

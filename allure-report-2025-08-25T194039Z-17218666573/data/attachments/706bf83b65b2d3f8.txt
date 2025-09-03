@@ -1,2 +1,0 @@
-HTTP Error: 422 Client Error: Unprocessable Entity for url: https://admin-dev.ewaproduct.com/api/admin/slides/17234
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/slides/17234

@@ -1,7 +1,0 @@
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/products/9991/translations
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/products/9991/translations
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/products/9991/translations?lang_code=ru
-➡ Удаление продукта 9991 через БД
-✅ Продукт 9991 успешно удалён из БД
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/23822/translations
-HTTP Error: 401 Client Error: Unauthorized for url: https://admin-dev.ewaproduct.com/api/admin/categories/23822
