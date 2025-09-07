@@ -1,4 +1,0 @@
-➡ Удаление продукта 10240 через БД
-✅ Продукт 10240 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/24434/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/24434

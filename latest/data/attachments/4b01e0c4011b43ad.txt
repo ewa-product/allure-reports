@@ -1,0 +1,2 @@
+HTTP Error: 413 Client Error: Request Entity Too Large for url: https://admin-dev.ewaproduct.com/api/admin/slides/18543/images
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/slides/18543
