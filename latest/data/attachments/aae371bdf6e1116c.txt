@@ -1,4 +1,0 @@
-➡ Удаление продукта 11015 через БД
-✅ Продукт 11015 успешно удалён из БД
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/26307/translations
-HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/26307

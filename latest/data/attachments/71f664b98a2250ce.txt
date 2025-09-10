@@ -1,0 +1,4 @@
+➡ Удаление продукта 11260 через БД
+✅ Продукт 11260 успешно удалён из БД
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/27400/translations
+HTTP Error: 404 Client Error: Not Found for url: https://admin-dev.ewaproduct.com/api/admin/categories/27400
