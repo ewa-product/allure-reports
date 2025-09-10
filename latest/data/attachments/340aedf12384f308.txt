@@ -1,2 +1,0 @@
-HTTP Error: 404 Client Error: Not Found for url: https://dev.ewahelps.com/api/fund/top_donors?period_start=invalid-date&period_end=2025-09-10T23%3A59%3A59&page=1&size=10
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewahelps.com/api/v1/donation/top_donors?period_start=invalid-date&period_end=2025-09-10T23%3A59%3A59&page=1&size=10
