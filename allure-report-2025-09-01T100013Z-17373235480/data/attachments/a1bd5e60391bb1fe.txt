@@ -1,3 +1,0 @@
-HTTP Error: 400 Client Error: Bad Request for url: https://admin-dev.ewaproduct.com/api/admin/items/2773
-[INFO] Item 2772 успешно удалён из БД.
-[INFO] Item 2773 успешно удалён из БД.
