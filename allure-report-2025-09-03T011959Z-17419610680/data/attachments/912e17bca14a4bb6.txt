@@ -1,1 +1,0 @@
-HTTP Error: 403 Client Error: Forbidden for url: https://dev.ewaproduct.com/api/1c_integration/stock?secret_key=&stock_id_1c=1
