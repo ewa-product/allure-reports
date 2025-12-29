@@ -1,0 +1,1 @@
+[CLEANUP] user_id=2877 stats={'sessions': 13, 'session_questions': 624, 'user_answers': 49, 'user_test_accesses': 0}
