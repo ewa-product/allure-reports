@@ -1,0 +1,4 @@
+
+PARTNER ID: 319582
+RESPONSE client_role: RolePartner
+MAIN ORDER client_id: 319582
