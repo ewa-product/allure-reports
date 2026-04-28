@@ -1,0 +1,4 @@
+
+PARTNER ID: 319620
+RESPONSE client_role: RolePartner
+MAIN ORDER client_id: 319620
