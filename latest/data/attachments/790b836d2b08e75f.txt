@@ -1,0 +1,4 @@
+[WARN] DB cleanup failed: relation "account_branded_wallet_images" does not exist
+LINE 1: DELETE FROM account_branded_wallet_images WHERE month=5 AND ...
+                    ^
+
