@@ -1,8 +1,0 @@
-[JPEG q=57] size=0.40 MB, diff=12161510
-[JPEG q=76] size=0.77 MB, diff=11773422
-[JPEG q=86] size=1.38 MB, diff=11133365
-[JPEG q=91] size=2.09 MB, diff=10389143
-[JPEG q=93] size=2.54 MB, diff=9917968
-[JPEG q=94] size=2.88 MB, diff=9567029
-[JPEG q=95] size=3.31 MB, diff=9109107
-[PAD] добавляем 9109107 байт
