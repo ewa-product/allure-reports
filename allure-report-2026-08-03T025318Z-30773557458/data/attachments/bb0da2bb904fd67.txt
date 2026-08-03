@@ -1,0 +1,1 @@
+[AUTH REFRESH] DELETE /shoplists/999999999 got 401 wrong secret; worker=gw0

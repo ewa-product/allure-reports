@@ -1,0 +1,5 @@
+[AUTH REFRESH] POST /cart/leave-group got 401 wrong secret; worker=gw0
+[INFO] Удаление продукта 8409 через БД
+[INFO] Продукт 8409 успешно удалён из БД
+[WARN] API удаление item 7645 вернуло код 405, пробуем удалить из БД...
+[INFO] Item 7645 удалён из БД напрямую.
