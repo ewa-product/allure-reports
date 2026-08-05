@@ -1,4 +1,0 @@
-
-PARTNER ID: 319899
-RESPONSE client_role: RolePartner
-MAIN ORDER client_id: 319899
