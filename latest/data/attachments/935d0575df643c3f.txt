@@ -1,0 +1,4 @@
+
+❌ Поле: city.latitude → статус 400
+Ответ: {'status_code': 400, 'error': '{"code":400,"message":"invalid JSON body","message_loc":"Некорректный формат JSON в теле запроса (rid: 2517202070)","rid":"2517202070"}\n'}
+

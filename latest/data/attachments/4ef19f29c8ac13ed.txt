@@ -1,0 +1,4 @@
+
+[DBG][HTTP] cart/update_multi no-auth: status=400
+[DBG][HTTP] cart/update_multi no-auth: payload.keys=['status_code', 'error']
+[DBG][HTTP] cart/update_multi no-auth: response.text[0:1200]='{"code":400,"message":"cookie not found","message_loc":"Внутренняя ошибка сервиса. Пожалуйста, обратитесь в тех поддержку (rid: 1263944499)","rid":"1263944499"}\n'

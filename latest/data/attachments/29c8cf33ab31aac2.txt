@@ -1,0 +1,34 @@
+
+[DBG][STEP] Pick seed from /products/list for stock_id=1
+
+[DBG][HTTP] GET /products/list: status=200
+[DBG][HTTP] GET /products/list: payload.type=<class 'list'>
+[DBG][HTTP] GET /products/list: response.text[0:1200]='[{"attributes":{"packaging":"20 стик-пакетов по 4,5 г","subtitle":"Инновационный продукт для повышения энергетического ресурса","title_power":"ЗАРЯД ЭНЕРГИИ ДЛЯ МАКСИМАЛЬНЫХ РЕЗУЛЬТАТОВ"},"categories":["хиты","БАД","забота о мозге","Халяль"],"category_ids":[1,3,26,71],"category_positions":[],"certificates":[{"alt":"СГР ТОН2_00001.jpg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/products/5/certificates/0__1762334014.jpeg"},{"alt":"СГР ТОН2_00004.jpg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/products/5/certificates/1__1762334018.jpeg"},{"alt":"СГР ТОН2_00003.jpg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/products/5/certificates/3__1762334027.jpeg"},{"alt":"УЗБЕК СС 1.jpeg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/products/5/certificates/7__1762334064.jpeg"},{"alt":"СГР ТОН2_00002.jpg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/products/5/certificates/2__1762334023.jpeg"},{"alt":"СС 1.jpg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/products/5/certificates/4__1762334049.jpeg"},{"alt":"СС 2.jpg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/products/5/certificates/5__1762334052.jpeg"},{"alt":"СС 3.jpg",'
+[DBG][API] Picked cart-valid quantity-2 seed for DB preparation: product_id=5, item_id=9, slot={'is_visible': True, 'left_in_stock': 101, 'stock_id': 1}
+
+[DBG][STEP] Seed DB availability exclusive for item_id=9 (product_id=5)
+[DBG][DB] availability_items(stock_id=1, item_id=9) = (1, 9, 10, 0, 0, False, True, True, True)
+
+[DBG][HTTP] GET profile: status=200
+[DBG][HTTP] GET profile: payload.keys=['avatar', 'birthday', 'can_fake_delivery', 'can_group_order', 'city', 'city_data', 'country', 'country_data', 'days_since_registration', 'email', 'exclude_promo_from_client_cashback', 'first_date_activation', 'has_personal_data_consent', 'id', 'is_chat_available', 'is_ebilet_enabled', 'is_withdrawal_limit', 'legal_status', 'login', 'name', 'patronymic', 'phone', 'purchase_link', 'region', 'region_data', 'register_date', 'register_date_unix', 'role', 'sex', 'support_chat_ai', 'surname', 'users_socials_new', 'utc_offset', 'visible_id']
+[DBG][HTTP] GET profile: response.text[0:1200]='{"avatar":{"alt":"avatar2","compressed_src":"https://cdn.ewaproductcdn.com/static/ewaproduct/test/minions/319899/compressed_avatar_src__1788356577.jpeg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/test/minions/319899/avatar_src__1788356576.png"},"birthday":{"day":1,"month":1,"year":1999},"can_fake_delivery":true,"can_group_order":true,"city":"Новосибирск","city_data":{"delivery_methods":[{"is_courier":true,"method":"RuPost"}],"has_hybrid_warehouse":false,"id":86990,"is_pvz_available":false,"name":"Новосибирск"},"country":"Россия","country_data":{"delivery_methods":[],"id":1,"is_eaeu":true,"is_region_available":true,"iso_code":"","name":"Россия"},"days_since_registration":148,"email":"ageppz@gmail.com","exclude_promo_from_client_cashback":false,"first_date_activation":{"day":12,"month":5,"year":2026},"has_personal_data_consent":true,"id":319899,"is_chat_available":true,"is_ebilet_enabled":true,"is_withdrawal_limit":true,"legal_status":"Individual","login":"qlywyturdd","name":"Сгенерированный","patronymic":"Пользователь","phone":"76595025996","purchase_link":"https://dev.ewaproduct.com/shop?purchase_ref_id=353544","region":"Новосибирская Область","region_data":{"id":54,"na'
+
+[DBG] stock_id=1, product_id=5, item_id=9, minion_id=319899, url=/cart/update?stock_id=1
+
+[DBG][STEP] DB check availability before request
+[DBG][DB] availability_items(stock_id=1, item_id=9) = (1, 9, 10, 0, 0, False, True, True, True)
+
+[DBG][STEP] Force no permission: minion_id=319899, item_id=9
+
+[DBG][HTTP] ADMIN delete permission: status=404
+[DBG][HTTP] ADMIN delete permission: payload.keys=['status_code', 'error']
+[DBG][HTTP] ADMIN delete permission: response.text[0:1200]='{"code":404,"message":"not found","message_loc":"Не найдено (rid: 3754034465)","rid":"3754034465"}\n'
+[DBG][DB] exclusive_preorder_permissions(minion_id=319899, item_id=9) = None
+
+[DBG][STEP] POST /cart/update without permission (expect 400)
+
+[DBG][HTTP] cart/update add exclusive without permission: status=200
+[DBG][HTTP] cart/update add exclusive without permission: payload.keys=['advance_costs', 'city', 'client_cashback_percentage', 'country', 'currency_id', 'currency_id_int', 'email', 'free_delivery_stocks', 'gift_items', 'gift_items_products_structs', 'has_bonus_payment_disabled_items', 'id', 'iin', 'is_delivery_from_pvz', 'is_digital_only', 'is_international_delivery', 'is_pvz_priority', 'is_pvz_priority_saved', 'items', 'items_count', 'items_products_structs', 'name', 'orders_payable', 'phone', 'region', 'stock', 'user_country', 'user_country_id']
+[DBG][HTTP] cart/update add exclusive without permission: response.text[0:1200]='{"advance_costs":[{"currency_id":643,"delivery_date":"2026-09-28","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false,"max_period":3,"method":"Boxberry","min_period":3,"old_price":15800,"out_of_stock_products":[],"price":14300,"rupost_courier_kind":"RupostCourierDeliveryNone","rupost_international_kind":"RupostInternationalDeliveryNone","rupost_to_office_kind":"RupostOfficeDeliveryNone","source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-26","is_courier":true,"is_free_delivery":false,"max_period":2,"method":"YandexOtherDay","min_period":1,"old_price":37300,"out_of_stock_products":[],"price":33600,"source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-26","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false,"max_period":6,"method":"Magnit","min_period":1,"old_price":19700,"out_of_stock_products":[],"price":17800,"rupost_courier_kind":"RupostCourierDeliveryNone","rupost_international_kind":"RupostInternationalDeliveryNone","rupost_to_office_kind":"RupostOfficeDeliveryNone","source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-27","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false'
+
+[DBG][STEP] Restore DB availability for item_id=9

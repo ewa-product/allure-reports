@@ -1,0 +1,13 @@
+[DEBUG] OPEN_WS_AND_AUTH: open ws...
+
+[DEBUG] SIMPLE_WS url='wss://dev.ewaproduct.com/ws' -> host='dev.ewaproduct.com', port=443, path='/ws/', secure=True, origin='https://dev.ewaproduct.com'
+
+[DEBUG] OPEN_WS_AND_AUTH: ws connected, send login...
+[DEBUG] OPEN_WS_AND_AUTH: login success, subscribe_chat...
+[DEBUG] OPEN_WS_AND_AUTH: subscribe_chat success
+
+WS SENT (no tag_type): {'message': 'ws где мой заказ?', 'client_uuid': 'd41ceec3-3444-4f15-8686-e9904066f664', 'tag_type': None}
+
+
+REST FOUND (no tag_type): {'blocks': {'events': [], 'list_reasons_for_order_return': None, 'orders': [], 'products': [], 'pvzs': [], 'tags': []}, 'client_uuid': 'd41ceec3-3444-4f15-8686-e9904066f664', 'created_at': '2026-09-25T00:31:33.940Z', 'is_bot_answer': False, 'message': 'ws где мой заказ?', 'owner_user_id': 319899, 'user_intent_tag': {'id': 1, 'text': 'question', 'type': 'question', 'user_role_id': 2}, 'uuid': 'af921dae-0661-4f5a-848c-506afdd35473'}
+

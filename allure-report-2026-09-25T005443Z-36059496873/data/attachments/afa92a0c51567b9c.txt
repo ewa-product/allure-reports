@@ -1,0 +1,4 @@
+
+❌ Поле: address → статус 400
+Ответ: {'status_code': 400, 'error': '{"code":400,"message":"invalid JSON body","message_loc":"Некорректный формат JSON в теле запроса (rid: 356456986)","rid":"356456986"}\n'}
+
