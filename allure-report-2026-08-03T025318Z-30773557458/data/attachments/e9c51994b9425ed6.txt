@@ -1,1 +1,0 @@
-[AUTH REFRESH] POST /cart/clear got 401 wrong secret; worker=gw0

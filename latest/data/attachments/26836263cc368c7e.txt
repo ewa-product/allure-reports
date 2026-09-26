@@ -1,0 +1,24 @@
+Error occurred in event listener
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/playwright/_impl/_page.py", line 310, in _on_route
+    handled = await route_handler.handle(route)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/playwright/_impl/_helper.py", line 455, in handle
+    raise e
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/playwright/_impl/_helper.py", line 442, in handle
+    return await self._handle_internal(route)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/playwright/_impl/_helper.py", line 478, in _handle_internal
+    await handler_finished_future
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/playwright/_impl/_helper.py", line 469, in _handler
+    self.handler(route, route.request)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/playwright/_impl/_impl_to_api_mapping.py", line 139, in wrapper_func
+    return handler(
+           ^^^^^^^^
+  File "/home/runner/work/ewa-product/ewa-product/ui_tests/tests/admin/test_rich_text_size_grid.py", line 173, in handler
+    assert "multipart/form-data" in (route.request.header_value("content-type") or "")
+AssertionError: assert 'multipart/form-data' in (('application/json'))
+ +  where 'application/json' = <bound method Request.header_value of <Request url='https://admin-dev.ewaproduct.com/api/products/description/image' method='POST'>>('content-type')
+ +    where <bound method Request.header_value of <Request url='https://admin-dev.ewaproduct.com/api/products/description/image' method='POST'>> = <Request url='https://admin-dev.ewaproduct.com/api/products/description/image' method='POST'>.header_value
+ +      where <Request url='https://admin-dev.ewaproduct.com/api/products/description/image' method='POST'> = <Route request=<Request url='https://admin-dev.ewaproduct.com/api/products/description/image' method='POST'>>.request

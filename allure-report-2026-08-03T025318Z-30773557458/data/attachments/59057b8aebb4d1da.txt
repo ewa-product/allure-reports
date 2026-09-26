@@ -1,5 +1,0 @@
-[AUTH REFRESH] GET /delivery/self_pickup_offices got 401 wrong secret; worker=gw0
-[INFO] Удаление продукта 8410 через БД
-[INFO] Продукт 8410 успешно удалён из БД
-[WARN] API удаление item 7646 вернуло код 405, пробуем удалить из БД...
-[INFO] Item 7646 удалён из БД напрямую.

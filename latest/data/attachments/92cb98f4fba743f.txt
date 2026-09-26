@@ -1,0 +1,4 @@
+
+❌ Поле: self_pickup_available → статус 400
+Ответ: {'status_code': 400, 'error': '{"code":400,"message":"invalid JSON body","message_loc":"Некорректный формат JSON в теле запроса (rid: 470174119)","rid":"470174119"}\n'}
+

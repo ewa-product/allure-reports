@@ -1,1 +1,0 @@
-[AUTH REFRESH] GET /account/funds_transfer/withdrawal_info got 401 wrong secret; worker=gw0

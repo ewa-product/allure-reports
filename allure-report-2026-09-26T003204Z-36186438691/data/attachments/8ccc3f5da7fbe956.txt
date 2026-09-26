@@ -1,0 +1,45 @@
+
+[DBG][STEP] Pick seed from /products/list for stock_id=1
+
+[DBG][HTTP] GET /products/list: status=200
+[DBG][HTTP] GET /products/list: payload.type=<class 'list'>
+[DBG][HTTP] GET /products/list: response.text[0:1200]='[{"attributes":{"packaging":"packaging_9022a1d7","subtitle":"subtitle_925f615b","title_power":"title_power_f126a515"},"categories":["Category_7b02e7a3"],"category_ids":[22138],"category_positions":[],"certificates":[],"f_rgba_small_circle":"f_rgba_d14159b1","id":17693,"key_features":"key_features_0ff18cf3","link_compatibility_table":"link_d0cd7242","long_description":"long_description_cc1411e5","name":"name_72b76cd8","name_rgba":"name_3d706ab5","position":11,"product_review":{"pdf_url":"","review_link":"","thumbnail_url":""},"product_type":"regular","referrer_link":"https://dev.ewaproduct.com/product/17693?purchase_ref_id=353544","rgba_big_circle":"rgba_791bc3d8","s_rgba_small_circle":"s_rgba_b46c4b9a","short_description":"short_description_cf1af9f9","single_item":{"item":{"article":"gw0_art_1790341018961698_0e153e","availability":[{"is_visible":true,"left_in_stock":10,"stock_id":8}],"bonus_price":100,"height":100,"id":17565,"images":null,"inner_items":null,"is_black_friday":true,"length":100,"media":null,"name":"","prices":[{"bonus_price":100,"iso_code":"933","old_price":1200,"price":1000,"stock_id":8}],"prohibited_countries_ids":[],"type":"product","visible":true,"volume":1000000'
+[DBG][API] Picked cart-valid quantity-2 seed for DB preparation: product_id=5, item_id=9, slot={'is_visible': True, 'left_in_stock': 101, 'stock_id': 1}
+
+[DBG][STEP] Seed DB availability exclusive for item_id=9 (product_id=5)
+[DBG][DB] availability_items(stock_id=1, item_id=9) = (1, 9, 10, 0, 0, False, True, True, True)
+
+[DBG][HTTP] GET profile: status=200
+[DBG][HTTP] GET profile: payload.keys=['avatar', 'birthday', 'can_fake_delivery', 'can_group_order', 'city', 'city_data', 'country', 'country_data', 'days_since_registration', 'email', 'exclude_promo_from_client_cashback', 'first_date_activation', 'has_personal_data_consent', 'id', 'is_chat_available', 'is_ebilet_enabled', 'is_withdrawal_limit', 'legal_status', 'login', 'name', 'patronymic', 'phone', 'purchase_link', 'region', 'region_data', 'register_date', 'register_date_unix', 'role', 'sex', 'support_chat_ai', 'surname', 'users_socials_new', 'utc_offset', 'visible_id']
+[DBG][HTTP] GET profile: response.text[0:1200]='{"avatar":{"alt":"avatar2","compressed_src":"https://cdn.ewaproductcdn.com/static/ewaproduct/test/minions/319899/compressed_avatar_src__1790370796.jpeg","src":"https://cdn.ewaproductcdn.com/static/ewaproduct/test/minions/319899/avatar_src__1790370796.png"},"birthday":{"day":1,"month":1,"year":1999},"can_fake_delivery":true,"can_group_order":true,"city":"Новосибирск","city_data":{"delivery_methods":[{"is_courier":true,"method":"RuPost"}],"has_hybrid_warehouse":false,"id":86990,"is_pvz_available":false,"name":"Новосибирск"},"country":"Россия","country_data":{"delivery_methods":[],"id":1,"is_eaeu":true,"is_region_available":true,"iso_code":"","name":"Россия"},"days_since_registration":149,"email":"ageppz@gmail.com","exclude_promo_from_client_cashback":false,"first_date_activation":{"day":12,"month":5,"year":2026},"has_personal_data_consent":true,"id":319899,"is_chat_available":true,"is_ebilet_enabled":true,"is_withdrawal_limit":true,"legal_status":"Individual","login":"qlywyturdd","name":"Сгенерированный","patronymic":"Пользователь","phone":"76595025996","purchase_link":"https://dev.ewaproduct.com/shop?purchase_ref_id=353544","region":"Новосибирская Область","region_data":{"id":54,"na'
+
+[DBG] stock_id=1, product_id=5, item_id=9, minion_id=319899, url=/cart/update?stock_id=1
+
+[DBG][STEP] DB check availability before request
+[DBG][DB] availability_items(stock_id=1, item_id=9) = (1, 9, 10, 0, 0, False, True, True, True)
+
+[DBG][STEP] Force no permission: minion_id=319899, item_id=9
+
+[DBG][HTTP] ADMIN delete permission: status=404
+[DBG][HTTP] ADMIN delete permission: payload.keys=['status_code', 'error']
+[DBG][HTTP] ADMIN delete permission: response.text[0:1200]='{"code":404,"message":"not found","message_loc":"Не найдено (rid: 3014830926)","rid":"3014830926"}\n'
+[DBG][DB] exclusive_preorder_permissions(minion_id=319899, item_id=9) = None
+
+[DBG][STEP] Create permission remaining_quantity=1
+
+[DBG][HTTP] ADMIN create/update permission: status=204
+[DBG][HTTP] ADMIN create/update permission: payload.type=<class 'NoneType'>
+
+[DBG][STEP] POST /cart/update quantity=1 (expect 200)
+
+[DBG][HTTP] cart/update qty=1 with permission: status=200
+[DBG][HTTP] cart/update qty=1 with permission: payload.keys=['advance_costs', 'city', 'client_cashback_percentage', 'country', 'currency_id', 'currency_id_int', 'email', 'free_delivery_stocks', 'gift_items', 'gift_items_products_structs', 'has_bonus_payment_disabled_items', 'id', 'iin', 'is_delivery_from_pvz', 'is_digital_only', 'is_international_delivery', 'is_pvz_priority', 'is_pvz_priority_saved', 'items', 'items_count', 'items_products_structs', 'name', 'orders_payable', 'phone', 'region', 'stock', 'user_country', 'user_country_id']
+[DBG][HTTP] cart/update qty=1 with permission: response.text[0:1200]='{"advance_costs":[{"currency_id":643,"delivery_date":"2026-09-29","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false,"max_period":3,"method":"Boxberry","min_period":3,"old_price":15800,"out_of_stock_products":[],"price":14300,"rupost_courier_kind":"RupostCourierDeliveryNone","rupost_international_kind":"RupostInternationalDeliveryNone","rupost_to_office_kind":"RupostOfficeDeliveryNone","source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-27","is_courier":true,"is_free_delivery":false,"max_period":4,"method":"YandexOtherDay","min_period":1,"old_price":37300,"out_of_stock_products":[],"price":33600,"source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-27","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false,"max_period":3,"method":"Magnit","min_period":1,"old_price":19700,"out_of_stock_products":[],"price":17800,"rupost_courier_kind":"RupostCourierDeliveryNone","rupost_international_kind":"RupostInternationalDeliveryNone","rupost_to_office_kind":"RupostOfficeDeliveryNone","source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-28","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false'
+
+[DBG][STEP] POST /cart/update quantity=2 (expect 400)
+
+[DBG][HTTP] cart/update qty=2 with permission: status=200
+[DBG][HTTP] cart/update qty=2 with permission: payload.keys=['advance_costs', 'city', 'client_cashback_percentage', 'country', 'currency_id', 'currency_id_int', 'email', 'free_delivery_stocks', 'gift_items', 'gift_items_products_structs', 'has_bonus_payment_disabled_items', 'id', 'iin', 'is_delivery_from_pvz', 'is_digital_only', 'is_international_delivery', 'is_pvz_priority', 'is_pvz_priority_saved', 'items', 'items_count', 'items_products_structs', 'name', 'orders_payable', 'phone', 'region', 'stock', 'user_country', 'user_country_id']
+[DBG][HTTP] cart/update qty=2 with permission: response.text[0:1200]='{"advance_costs":[{"currency_id":643,"delivery_date":"2026-09-29","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false,"max_period":3,"method":"Boxberry","min_period":3,"old_price":17200,"out_of_stock_products":[],"price":15600,"rupost_courier_kind":"RupostCourierDeliveryNone","rupost_international_kind":"RupostInternationalDeliveryNone","rupost_to_office_kind":"RupostOfficeDeliveryNone","source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-27","is_courier":true,"is_free_delivery":false,"max_period":4,"method":"YandexOtherDay","min_period":1,"old_price":38700,"out_of_stock_products":[],"price":34900,"source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-27","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false,"max_period":3,"method":"Magnit","min_period":1,"old_price":19700,"out_of_stock_products":[],"price":17800,"rupost_courier_kind":"RupostCourierDeliveryNone","rupost_international_kind":"RupostInternationalDeliveryNone","rupost_to_office_kind":"RupostOfficeDeliveryNone","source_stock_id":2},{"country_id_to":1,"currency_id":643,"delivery_date":"2026-09-28","dpd_kind":"DPDDeliveryKindNone","is_free_delivery":false'
+
+[DBG][STEP] Restore DB availability for item_id=9
