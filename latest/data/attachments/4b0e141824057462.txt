@@ -1,0 +1,1 @@
+[category cleanup] verified 1 entities, 3 tables after commit

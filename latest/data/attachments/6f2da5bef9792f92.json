@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "approval": "User approved excluding dangerous operations on the shared stand. Exclusions are never counted as coverage.",
+  "groups": [
+    {
+      "category": "dangerous",
+      "reason": "Changes financial balances, accruals, withdrawals or ledger history; a compensating operation cannot restore all external events.",
+      "source": "backend/internal/handler/admin.go; backend/internal/handler/account.go; backend/internal/handler/1c.go",
+      "operations": [
+        "POST /account/funds_transfer/send",
+        "POST /account/multi-accounts/convert",
+        "POST /account/multi-accounts/convert/admin",
+        "POST /admin/accrue_auto_bonus",
+        "POST /admin/accrue_gold_pro_gift",
+        "POST /admin/accrue_presidential_pool",
+        "POST /admin/add_lo",
+        "POST /admin/approve_marketing_result",
+        "POST /admin/approve_marketing_result_with_period",
+        "POST /admin/batch_accrue_presidential_pool",
+        "POST /admin/batch_rollback_presidential_pool",
+        "POST /admin/cancel_transfer",
+        "POST /admin/cic_transfer",
+        "POST /admin/ewa-miles/accrue",
+        "POST /admin/ewa-miles/transactions/{transaction_id}/reversal",
+        "POST /admin/ewa-miles/{user_id}/transactions",
+        "POST /admin/fund/transfer/cancel",
+        "POST /admin/increase_balance",
+        "POST /admin/withdrawals/allow",
+        "POST /admin/withdrawals/approve",
+        "POST /admin/withdrawals/reject",
+        "POST /1c_integration/refund_payment",
+        "POST /1c_integration/withdrawal/update"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Creates, pays, refunds, reserves or exports a real order. Verified rollback across stock, financial and external systems is unavailable on the shared stand.",
+      "source": "backend/internal/handler/orders.go; backend/internal/service/orders.go",
+      "operations": [
+        "POST /orders/cancel",
+        "POST /orders/change_order_client",
+        "POST /orders/change_order_visibility",
+        "DELETE /orders/change_order_visibility",
+        "POST /orders/check_payment",
+        "POST /orders/create/delivery_address",
+        "POST /orders/group_order",
+        "POST /orders/group_order/change",
+        "POST /orders/group_order/confirm",
+        "POST /orders/group_order/leave",
+        "POST /orders/group_order/v2",
+        "POST /orders/mark_metrika_sent/{order_id}",
+        "POST /orders/one-click",
+        "POST /orders/refund",
+        "POST /orders/repeat",
+        "POST /orders/v2/pay",
+        "POST /orders/v2/repeat",
+        "POST /admin/group_order/approve",
+        "POST /admin/orders/{id}/lottery-coupons",
+        "POST /admin/resend_soyuz_order",
+        "POST /admin/set_order_payment_success",
+        "POST /1c_integration/orders/create",
+        "POST /1c_integration/orders/pay",
+        "DELETE /1c_integration/orders/close",
+        "POST /test/order/pay",
+        "POST /test/order/statuses/detailed",
+        "PUT /test/order/statuses"
+      ]
+    },
+    {
+      "category": "dangerous_prerequisite",
+      "reason": "A positive response needs an owned real order/payment. Creating it reserves stock and triggers financial or external events; foreign orders are never borrowed.",
+      "source": "backend/internal/handler/orders.go; backend/internal/handler/handler.go",
+      "operations": [
+        "GET /orders/get/one",
+        "GET /orders/get/one/by_int_id",
+        "GET /orders/group_order/{id}",
+        "GET /orders/{id}/payment-status",
+        "GET /orders/{order_id}/statuses",
+        "GET /orders/{order_id}/statuses/last",
+        "POST /admin/get_order_payment_status",
+        "POST /admin/orders/get",
+        "POST /admin/soyuz_order_status",
+        "GET /1c_integration/orders/get",
+        "GET /1c_integration/refund_payment/history"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Sends SMS/email/push or creates/processes a support request. Deleting local rows cannot recall a delivered message.",
+      "source": "backend/internal/handler/registration.go; backend/internal/handler/tickets.go; backend/internal/service/registration.go; backend/internal/handler/notifications.go",
+      "operations": [
+        "POST /register/form",
+        "POST /register/partner",
+        "POST /register/cic",
+        "POST /register/ref/client",
+        "POST /register/ref/partner",
+        "POST /register/send_sms_code",
+        "POST /register/verify_by_sms",
+        "POST /account/pass_recovery",
+        "POST /api/v1/orders/request-sms",
+        "POST /api/v1/orders/verify-sms",
+        "POST /callback_request",
+        "POST /admin/callback_requests/{id}/process",
+        "POST /1c_integration/qr/resend_point_secrets",
+        "PUT /admin/push",
+        "POST /test/notification",
+        "POST /test/ticket-auto-answer",
+        "POST /tickets",
+        "POST /tickets/create",
+        "POST /tickets/create_for_user",
+        "POST /support-chat/create",
+        "POST /support-chat/ticket",
+        "POST /tickets/{id}/send_message",
+        "POST /tickets/{id}/update_message",
+        "POST /tickets/{id}/delete_message",
+        "POST /tickets/{id}/seize_control",
+        "POST /tickets/support_feedback",
+        "POST /tickets/update",
+        "POST /tickets/delete",
+        "DELETE /tickets/close/{id}",
+        "POST /v2/chats/{id}/messages",
+        "POST /v2/chats/{id}/delivered",
+        "POST /v2/chats/{id}/read"
+      ]
+    },
+    {
+      "category": "dangerous_prerequisite",
+      "reason": "Requires an owned support ticket/message; its creation contacts support or an external system without verified cleanup.",
+      "source": "backend/internal/handler/tickets.go; backend/internal/handler/handler.go",
+      "operations": [
+        "GET /tickets/{id}",
+        "GET /tickets/{id}/messages",
+        "GET /test/last_message"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Changes shared queues, configuration, exchange rates, synchronization, marketing periods or global ordering; affects foreign entities and background jobs.",
+      "source": "backend/internal/handler/handler.go; backend/internal/handler/admin.go; backend/internal/handler/queue.go",
+      "operations": [
+        "POST /queue/info_to_log",
+        "POST /queue/pause",
+        "POST /queue/resume",
+        "POST /admin/sync/delivery",
+        "POST /admin/system_data",
+        "POST /admin/system_settings",
+        "PUT /admin/dev/periods/{id}/end_time",
+        "POST /test/actualize-currencies",
+        "POST /test/cleanup-expired-tokens",
+        "POST /admin/products/order",
+        "POST /products/delete",
+        "POST /admin/instrumentarium/sort",
+        "POST /news/pin/reorder",
+        "POST /v2/admin/events/tiles/sort",
+        "POST /contacts/office/main",
+        "POST /1c_integration/currency-policy/bonus-rate/set",
+        "POST /1c_integration/currency-policy/commodity-rate/set",
+        "POST /1c_integration/currency-policy/exchange-rate/set",
+        "POST /1c_integration/free_delivery_to_regions_and_cities",
+        "POST /1c_integration/items/create_or_update",
+        "POST /1c_integration/stock",
+        "POST /1c_integration/stock/delivery_methods"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "External credentials, SSO, webhooks or indexing require an isolated external tenant with verified cleanup. Such prerequisites must not use existing external users or tickets.",
+      "source": "backend/internal/handler/handler.go; backend/internal/handler/bitrix24_admin.go; backend/internal/handler/ewaagent_admin.go",
+      "operations": [
+        "GET /ewaagent/order",
+        "POST /ewaagent/password-recovery",
+        "POST /ewaagent/ticket",
+        "POST /external/e-ticket/token",
+        "POST /external/notifications_read",
+        "POST /external/push-settings",
+        "GET /admin/bitrix24/connector/status",
+        "GET /admin/bitrix24/tickets/{id}",
+        "POST /admin/bitrix24/connector/register",
+        "POST /admin/bitrix24/oauth/seed",
+        "POST /admin/bitrix24/tickets/{id}/resync",
+        "POST /v1/bitrix24/placement",
+        "POST /v1/webhooks/alice",
+        "POST /v1/webhooks/bitrix24/events",
+        "POST /v1/webhooks/m3u8",
+        "GET /admin/ewa-agent/knowledge/{id}",
+        "POST /admin/ewa-agent/knowledge",
+        "PUT /admin/ewa-agent/knowledge/{id}",
+        "DELETE /admin/ewa-agent/knowledge/{id}",
+        "POST /admin/ewa-agent/knowledge/reindex",
+        "POST /admin/ewa-agent/knowledge/{id}/reindex",
+        "POST /admin/products/{id}/ewa-agent-context/generate",
+        "PUT /admin/products/{id}/ewa-agent-context",
+        "POST /soyuz/sso-session",
+        "POST /special_offers/sberbank/new-card",
+        "GET /special_offers/{offerId}"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Swagger describes notification creation, not a read. Dispatch and external notification deletion are not isolated or verified; the current 405 must not be used as a safety guarantee.",
+      "source": "swagger.yaml; backend/internal/handler/notificator.go; backend/internal/service/external_service.go",
+      "operations": [
+        "POST /external/notifications"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Changes education access or external reward-program membership; local cleanup cannot reverse external authorization and events.",
+      "source": "backend/internal/handler/handler.go; backend/internal/handler/1c.go",
+      "operations": [
+        "POST /admin/users/{id}/course-tariffs/{tariff_id}/access",
+        "DELETE /admin/users/{id}/course-tariffs/{tariff_id}/access",
+        "POST /1c_integration/reward_system/add_employee",
+        "DELETE /1c_integration/reward_system/delete_employee"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Writes/deletes storage objects or starts processing without verified ownership and rollback for this storage namespace, including lost HTTP responses.",
+      "source": "backend/internal/handler/handler.go; api_tests/utils/item_cleanup.py; api_tests/utils/product_cleanup.py",
+      "operations": [
+        "POST /account/branded-wallet/image",
+        "DELETE /account/branded-wallet/image",
+        "POST /account/cover_url",
+        "DELETE /account/cover_url",
+        "POST /account/update_avatar",
+        "POST /account/delete_avatar",
+        "POST /admin/catalog-files/{id}/file",
+        "POST /admin/leaders-council/{user_id}/photos",
+        "DELETE /admin/leaders-council/photos/{photo_id}",
+        "POST /admin/leaders-council/{user_id}/photos/reorder",
+        "POST /admin/slides/{id}/images",
+        "POST /admin/slides/{id}/video/get-upload-urls",
+        "POST /admin/slides/{id}/video/update",
+        "POST /admin/success-stories/{id}/images",
+        "POST /admin/whats-new/slides/{id}/images/get-upload-urls",
+        "POST /admin/whats-new/slides/{id}/images/update",
+        "POST /admin/whats-new/slides/{id}/video/jobs",
+        "POST /admin/whats-new/slides/{id}/video/multipart",
+        "POST /admin/whats-new/slides/{id}/video/multipart/abort",
+        "POST /admin/whats-new/slides/{id}/video/multipart/parts",
+        "POST /bucket/insert",
+        "POST /events/images/add",
+        "POST /events/images/delete",
+        "POST /events/images/focus",
+        "POST /events/images/reorder",
+        "POST /events/images/update",
+        "POST /news/images/add",
+        "POST /news/images/delete",
+        "POST /news/images/update",
+        "POST /products/certificates/add",
+        "POST /products/certificates/delete",
+        "POST /products/certificates/reorder",
+        "POST /products/certificates/update",
+        "POST /products/description/image",
+        "POST /products/main_image/delete",
+        "POST /products/main_image/update",
+        "POST /v2/admin/events/categories/{id}/cover",
+        "POST /v2/admin/events/{id}/cover",
+        "POST /admin/products/compatibility-table"
+      ]
+    },
+    {
+      "category": "dangerous_prerequisite",
+      "reason": "A positive read needs an owned transcoding job; uploaded parts, processing and external storage cleanup have not been verified.",
+      "source": "backend/internal/handler/whats_new.go",
+      "operations": [
+        "GET /admin/whats-new/slides/{id}/video/status"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Legacy video DELETE selects video_data.id using event_id, which can target foreign video data. PATCH changes external video playback state.",
+      "source": "backend/internal/repository/events.go; backend/internal/handler/events.go",
+      "operations": [
+        "DELETE /events/{event_id}/video_data",
+        "PATCH /events/{event_id}/video_data"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Creates an ownerless shared-cart snapshot without a deletion API; response loss prevents deterministic ownership recovery.",
+      "source": "backend/internal/service/carts.go; backend/internal/repository/carts.go",
+      "operations": [
+        "POST /cart/share",
+        "GET /cart/shareable/{linkID}"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Creates/uses one-time Redis credentials without a reviewed cleanup path after failed confirmation.",
+      "source": "backend/internal/handler/admin.go",
+      "operations": [
+        "GET /admin/otp/{id}"
+      ]
+    },
+    {
+      "category": "dangerous_prerequisite",
+      "reason": "Leaving a group requires joining an owned real group order. Creating that prerequisite reserves stock and launches the order lifecycle.",
+      "source": "backend/internal/service/carts.go:LeaveGroupOrder",
+      "operations": [
+        "POST /cart/leave-group"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Creates/sends passport attachments and a marriage-contract ticket to support. Local database deletion does not recall those documents.",
+      "source": "backend/internal/service/account.go:CreateFamilyAgreementFirstType; backend/internal/service/account.go:CreateFamilyAgreementThirdType",
+      "operations": [
+        "POST /account/family_agreement/create_one",
+        "POST /account/family_agreement/create_three"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "User deletion sends an email and revokes credentials. Restoration requires that externally observable lifecycle; no isolated messaging rollback is available.",
+      "source": "backend/internal/service/registration.go:DeleteUser",
+      "operations": [
+        "DELETE /account/delete",
+        "POST /admin/delete_user",
+        "POST /admin/restore_user"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Changes partner qualification/structure and recalculates bonuses and historical accruals. Shared-stand rollback must not reach foreign ancestors or financial history.",
+      "source": "backend/internal/service/minions.go:SwapMinions; backend/internal/service/minions.go:DoSingleDowngrade",
+      "operations": [
+        "POST /admin/minions/swap",
+        "POST /admin/downgrade_user"
+      ]
+    },
+    {
+      "category": "dangerous",
+      "reason": "Recurring donations schedule financial debits. These routes are currently commented out in handler.go; enabling their positive lifecycle also needs an isolated financial environment.",
+      "source": "backend/internal/handler/handler.go",
+      "operations": [
+        "POST /account/funds_transfer/charity/donation-subscriptions",
+        "GET /account/funds_transfer/charity/donation-subscriptions",
+        "DELETE /account/funds_transfer/charity/donation-subscriptions/{subscription_id}",
+        "PATCH /account/funds_transfer/charity/donation-subscriptions/{subscription_id}/resume"
+      ]
+    },
+    {
+      "category": "dangerous_prerequisite",
+      "reason": "Positive role conversion depends on a shared IsMakePartnerEnabled feature flag and changes partner marketing structure. Smoke must not enable global flags on a shared stand.",
+      "source": "backend/internal/handler/account.go:handleUpdateClient",
+      "operations": [
+        "POST /account/make_partner"
+      ]
+    }
+  ]
+}
